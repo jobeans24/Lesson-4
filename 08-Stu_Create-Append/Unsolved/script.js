@@ -1,17 +1,17 @@
-var body = document.body;
-var h1El = document.createElement("h1");
-var infoEl = document.createElement("div");
-var imgEl = document.createElement("img");
-var kittenEl = document.createElement("div");
-var nameEl = document.createElement("div");
-var favoriteEl = document.createElement("div");
+let body = document.body;
+let h1El = document.createElement("h1");
+let infoEl = document.createElement("div");
+let imgEl = document.createElement("img");
+let kittenEl = document.createElement("div");
+let nameEl = document.createElement("div");
+let favoriteEl = document.createElement("div");
 // Create ordered list element
-var listEl = document.createElement("ol");
+let listEl = document.createElement("ol");
 // Create ordered list items
-var li1 = document.createElement("li");
-var li2 = document.createElement("li");
-var li3 = document.createElement("li");
-var li4 = document.createElement("li");
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+let li4 = document.createElement("li");
 
 h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
@@ -35,3 +35,21 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+listEl.appendChild(li1);
+listEl.appendChild(li2);
+listEl.appendChild(li3);
+listEl.appendChild(li4);
+
+li1.textContent = "Pizza";
+li2.textContent = "Sushi";
+li3.textContent = "Ice Cream";
+li4.textContent = "Tacos";
+
+listEl.setAttribute("style", "background-color: #333333; padding: 20px;");
+li1.setAttribute("style", "color: white; background-color: lightgreen; padding: 5px; margin-left: 35px;");
+li2.setAttribute("style", "color: white; background-color: lightcoral; padding: 5px; margin-left: 35px;");
+li3.setAttribute("style", "color: white; background-color: lightblue; padding: 5px; margin-left: 35px;");
+li4.setAttribute("style", "color: white; background-color: lightgrey; padding: 5px; margin-left: 35px;");
+
+
+
