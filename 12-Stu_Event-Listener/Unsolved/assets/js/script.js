@@ -17,7 +17,7 @@ decrementEl.addEventListener('click', function() {
   count--;
   if (count < 0) {
     count = 0;
-  }
+  } // this function ensures that the count does not go below 0
   setCounterText();
 }); // this function decreases the number count when the decrement button is clicked
 
