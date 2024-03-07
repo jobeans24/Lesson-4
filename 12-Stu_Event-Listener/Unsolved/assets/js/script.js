@@ -1,12 +1,21 @@
 let count = 0;
 const incrementEl = document.querySelector('#increment');
 const decrementEl = document.querySelector('#decrement');
-const countEl = document.querySelector('#count');
+const countEl = document.querySelector('#count'); 
 
 function setCounterText() {
   countEl.textContent = count;
-}
+} // this function sets the text of the count element to the current count
 
-// TODO: Add event listener to increment button
 
-// TODO: Add event listener to decrement button
+incrementEl.addEventListener('click', function() {
+  count++;
+  setCounterText();
+}); // this function increases the number count when the increment button is clicked
+
+decrementEl.addEventListener('click', function() {
+  count--;
+  setCounterText();
+}); // this function decreases the number count when the decrement button is clicked
+
+setCounterText(); // this function sets the text of the count element to the current count
