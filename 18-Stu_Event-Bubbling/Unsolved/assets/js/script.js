@@ -2,7 +2,7 @@
 // this const is selecting the element with the class of "carouselbox"
 const carousel = document.querySelector('.carouselbox');
 // TODO: Which element is the following line of code selecting?
-// this const is selecting the element with the class of "next"
+// the following const is selecting the element with the class of "next" and "prev"
 const next = carousel.querySelector('.next');
 const prev = carousel.querySelector('.prev');
 let index = 0;
