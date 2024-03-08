@@ -1,6 +1,8 @@
+
 const tipEl = document.querySelector('#tip-percentage');
 const totalEl = document.querySelector('#total');
 const submitEl = document.querySelector('#submit');
+
 
 function calculateTip(total, tipPercentage) {
   const roundedResult = (total * tipPercentage).toFixed(2);
@@ -19,5 +21,10 @@ function addTip(event) {
   document.querySelector('#tip-amount').textContent = tipAmount;
   document.querySelector('#new-total').textContent = newTotal.toFixed(2);
 }
+
+submitEl.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevents the default form submission behavior
+  addTip();
+}); // The addTip function will be called when the submit button is clicked
 
 submitEl.addEventListener('click', addTip);
